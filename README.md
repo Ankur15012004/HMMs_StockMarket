@@ -27,11 +27,15 @@ After training our **HMM**, we extract the mean log returns and covariances for 
 The **HMM transition matrix** captures the probability of switching between different market states:
 
 
-$P = \begin{bmatrix}
-0.9703 & 0.0297 & 0.0000 \\
-0.0362 & 0.9574 & 0.0063 \\
-0.0000 & 0.0348 & 0.9652
-\end{bmatrix}$
+## 🔹 Transition Probability Matrix
+
+| State From → | 🟢 Bull | 🟠 Neutral | 🔴 Bear |
+|-------------|--------|---------|--------|
+| **🟢 Bull**    | 0.9703 | 0.0297  | 0.0000  |
+| **🟠 Neutral** | 0.0362 | 0.9574  | 0.0063  |
+| **🔴 Bear**    | 0.0000 | 0.0348  | 0.9652  |
+
+
 
 🔹 **Interpretation:**
 - The market tends to remain in the same state for long periods (high diagonal values).
