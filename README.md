@@ -26,13 +26,12 @@ After training our **HMM**, we extract the mean log returns and covariances for 
 ## 🔄 **2️⃣ Transition Probability Matrix**
 The **HMM transition matrix** captures the probability of switching between different market states:
 
-\[
-P = \begin{bmatrix}
+
+$P = \begin{bmatrix}
 0.9703 & 0.0297 & 0.0000 \\
 0.0362 & 0.9574 & 0.0063 \\
 0.0000 & 0.0348 & 0.9652
-\end{bmatrix}
-\]
+\end{bmatrix}$
 
 🔹 **Interpretation:**
 - The market tends to remain in the same state for long periods (high diagonal values).
@@ -79,15 +78,15 @@ The stationary distribution reveals **long-term probabilities** of each market r
 ## 🔮 **5️⃣ Market Forecasting Using HMM Probabilities**
 Using **predictive probabilities**, we estimate the **next day's market state**:
 
-\[
-N_{t+1} = N_t \cdot P
-\]
+
+$N_{t+1} = N_t \cdot P$.
+
 
 This allows us to forecast **multi-day transitions** using the n-step Markov property:
 
-\[
-N_{t+n} = N_t \cdot P^n
-\]
+
+$N_{t+n} = N_t \cdot P^n$.
+
 
 🔹 **Current Prediction:** Based on today’s data, the market is most likely in a **Neutral State**.
 
