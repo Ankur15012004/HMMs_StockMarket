@@ -7,7 +7,7 @@ This project applies a **Hidden Markov Model (HMM)** to analyze stock market reg
 - 🟠 **Neutral Market** ⚖️ (Sideways movement)
 - 🔴 **Bear Market** 🐻 (Downtrend or crisis period)
 
-The model is trained on historical **S&P 500** data from **2005–2011**, capturing the 2008 financial crisis. The results include **state transitions**, **stationary distributions**, and **market forecasts** using probability matrices.
+The model is trained on historical **S&P 500** data from **2005–2025**, capturing the 2008 financial crisis. The results include **state transitions**, **stationary distributions**, and **market forecasts** using probability matrices.
 
 ---
 ## 📊 **1️⃣ Mean Log Returns & Covariances per State**
