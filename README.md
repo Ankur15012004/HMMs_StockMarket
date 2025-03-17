@@ -41,7 +41,7 @@ P = \begin{bmatrix}
 
 Using this transition matrix, we can forecast future probabilities by multiplying it with the current state vector:
 
-\[ N_{t+1} = N_t \cdot Q \]
+$N_{t+1} = N_t \cdot Q$.
 
 ---
 ## 📅 **3️⃣ Market Regimes with Moving Averages**
